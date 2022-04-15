@@ -1,0 +1,67 @@
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html, body {
+    cursor: url("cursor.ico"), default;
+}
+.selector {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.pan-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.image-wrapper {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-aspect-ratio: 1920/1281) {
+  .image-wrapper {
+    width: 110vw;
+    height: calc(110vw * 1281 / 1920);
+  }
+}
+@media screen and (max-aspect-ratio: 1920/1281) {
+  .image-wrapper {
+    height: 110vh;
+    width: calc(110vh * 1920 / 1281);
+  }
+}
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#info {
+  z-index: 1000;
+  position: absolute;
+  padding: 10px;
+  left: 0;
+  top: 0;
+  color: #333;
+  user-select: none;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 rgba(255,255,255,0.5),
+    1px -1px 0 rgba(255,255,255,0.5),
+    -1px 1px 0 rgba(255,255,255,0.5),
+    1px 1px 0 rgba(255,255,255,0.5);
+}
