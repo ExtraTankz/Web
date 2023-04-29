@@ -54,7 +54,11 @@ Start the server
 ## Authors
 
 - [@ExtraTankz](https://github.com/ExtraTankz) Creator and Founder of ExtraTankz Studios
+
+- [@DevJ Lab](https://github.com/DevJ-Lab) Developer for ExtraTankz Studios & DevJ Coding.
 ## Contributing
+
+- [@DevJ Lab](https://github.com/DevJ-Lab) Assisted with development early on.
 
 Contributions are always welcome!
 
